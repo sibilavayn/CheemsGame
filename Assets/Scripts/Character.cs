@@ -90,5 +90,9 @@ public class Character : Unit
         Collider2D[] colliders=Physics2D.OverlapCircleAll(transform.position, 1.0f);
         isGrounded=colliders.Length >1;
     }
+
+    private void Puk(){
+        //TODO: puk
+    }
     
 }
