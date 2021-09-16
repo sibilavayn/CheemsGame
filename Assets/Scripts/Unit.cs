@@ -13,6 +13,4 @@ public class Unit : MonoBehaviour
     {
         Destroy(gameObject);
     }
-
-    
 }

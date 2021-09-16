@@ -30,9 +30,8 @@ protected virtual void Start() { }
                transform.eulerAngles=new Vector3(0,0,0);
                movingRight=true;
             }
-
          }
-       }
+   }
          public override void ReceiveDamage()
          {
             lives--;
@@ -47,8 +46,6 @@ protected virtual void Start() { }
             if (other.gameObject.tag == "Weapon") 
             {
                ReceiveDamage();
-               // Character.isAttacking = false;
-               // Debug.Log( "enemy "+Character.isAttacking);
             }
          }
 }

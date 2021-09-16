@@ -40,15 +40,15 @@ public class Character : Unit
         livesBar=FindObjectOfType<LivesBar>();
         rigidbody=GetComponent<Rigidbody2D>();
         animator=GetComponent<Animator>();
-        sprite=GetComponentInChildren <SpriteRenderer>();
+        sprite=GetComponentInChildren<SpriteRenderer>();
         source=GetComponent<AudioSource>();
     }
 
 
     private void Update ()
     {
-        if (Input.GetButton("Horizontal")) Run ();
-        if (Input.GetButtonDown("Jump")) Jump(); //isGr. в начале
+        if (Input.GetButton("Horizontal")) Run();
+        if (Input.GetButtonDown("Jump")) Jump(); 
         // if (Input.GetKeyDown(KeyCode.A))
         // {
         //     transform.rotation = Quaternion.Euler(transform.rotation.x, 180, transform.rotation.z);
@@ -80,7 +80,7 @@ public class Character : Unit
     }
 
 
-     public override void ReceiveDamage()
+    public override void ReceiveDamage()
     {
         Lives--;
 
