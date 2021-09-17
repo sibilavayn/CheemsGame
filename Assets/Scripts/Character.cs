@@ -28,10 +28,8 @@ public class Character : Unit
     
 
     new private Rigidbody2D rigidbody;
-    private Animator animator;
     private SpriteRenderer sprite;
     public GameObject player;
-    public static bool isAttacking=false;
     private AudioSource source;
     
 
@@ -39,7 +37,6 @@ public class Character : Unit
     {
         livesBar=FindObjectOfType<LivesBar>();
         rigidbody=GetComponent<Rigidbody2D>();
-        animator=GetComponent<Animator>();
         sprite=GetComponentInChildren<SpriteRenderer>();
         source=GetComponent<AudioSource>();
     }
